@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html data-ng-app='appPractica'>
+<head>
+	<meta charset="utf-8">
+	<title>PRÁCTICA TAREA</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type="text/javascript" src='angular.min.js'_></script>
+	<script type="text/javascript" src='practica.js'></script>
+	<script type="text/javascript" src='practicaController.js'_></script>
+	<script type="text/javascript" src='practicaService.js'_></script>
+</head>
+<body data-ng-controller='mainControlador'>
+	Nombre:
+	<input type="text" name="nombre" data-ng-model='nombre'>
+	Apellido:
+	<input type="text" name="apellido" data-ng-model='apellido'>
+	Edad:
+	<input type="text" name="edad" data-ng-model='edad'>
+	Teléfono:
+	<input type="text" name="telefono" data-ng-model='telefono'>
+	<button type="button" data-ng-click='mostrar()'>Mostrar</button>
+	<div data-ng-repeat='dato in dates'>
+		<strong>{{dato.nombre}}</strong>
+		<strong>{{dato.apellido}}</strong>
+		<strong>{{dato.edad}}</strong>
+		<strong>{{dato.telefono}}</strong>
+	</div>
+</body>
+</html>
